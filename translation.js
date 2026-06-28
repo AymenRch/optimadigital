@@ -38,6 +38,15 @@ const translation = {
         filterWebsites: "WEBSITES",
         filterApps: "APPS",
         viewCaseStudy: "View Case Study",
+        project1webPreTitle: "E-Commerce",
+        project1webTitle: "APL Tech",
+        project1webSubTitle: "High-performance e-commerce platform for computers & gaming hardware.",
+        project2webPreTitle: "Car Rental",
+        project2webTitle: "Espadon Rent Car",
+        project2webSubTitle: "Professional car rental platform featuring an online booking system & vehicle fleet showcase.",
+        project3webPreTitle: "Healthcare",
+        project3webTitle: "Serenity Centre Dentaire",
+        project3webSubTitle: "Modern dental clinic website designed to showcase comprehensive dental services.",
 
         // Roadmap
         roadmapTitle: "Growth Roadmap",
@@ -127,6 +136,15 @@ const translation = {
         filterWebsites: "SITES WEB",
         filterApps: "APPLICATIONS",
         viewCaseStudy: "Voir l'Étude de Cas",
+        project1webPreTitle: "E-Commerce",
+        project1webTitle: "APL Tech",
+        project1webSubTitle: "Plateforme e-commerce haute performance pour ordinateurs et matériel de gaming.",
+        project2webPreTitle: "Car Rental",
+        project2webTitle: "Espadon Rent Car",
+        project2webSubTitle: "Plateforme professionnelle de location de voitures avec système de réservation en ligne.",
+        project3webPreTitle: "Healthcare",
+        project3webTitle: "Serenity Centre Dentaire",
+        project3webSubTitle: "Site web moderne de clinique dentaire conçu pour présenter des services dentaires complets.",
 
         // Roadmap
         roadmapTitle: "Feuille de Route de Croissance",
