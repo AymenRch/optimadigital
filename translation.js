@@ -95,7 +95,11 @@ const translation = {
         footerPrivacy: "Privacy Policy",
         footerTerms: "Terms of Service",
         footerSocialTitle: "Social",
-        footerBottom: "© 2024 OptimaDigital. Precision Engineered Growth."
+        footerBottom: "© 2024 OptimaDigital. Precision Engineered Growth.",
+
+        emailSuccess: "Your mail was sent!",
+        emailError: "Failed to send.",
+        btnSending: "Sending...."
     },
     fr: {
         // Nav
@@ -193,7 +197,11 @@ const translation = {
         footerPrivacy: "Politique de Confidentialité",
         footerTerms: "Conditions Générales",
         footerSocialTitle: "Social",
-        footerBottom: "© 2024 OptimaDigital. Croissance de Précision."
+        footerBottom: "© 2024 OptimaDigital. Croissance de Précision.",
+
+        emailSuccess: "Votre Message a été envoyé!",
+        emailError: "Échec de l'envoi!",
+        btnSending: "Envoi en cours..."
     }
 };
 
