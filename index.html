@@ -39,8 +39,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap"
         rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -237,6 +236,8 @@
                     <div class="filter-bar">
                         <button class="filter-btn active" data-translate="filterAll">ALL PROJECTS</button>
                         <button class="filter-btn" data-translate="filterWebsites">WEBSITES</button>
+                        <button class="filter-btn" data-filter="graphics"
+                            data-translate="filterGraphics">GRAPHICS</button>
                     </div>
                 </div>
                 <div class="project-grid">
@@ -289,6 +290,48 @@
                                 data-translate="viewCaseStudy">
                                 View Case Study
                             </a>
+                        </div>
+                    </div>
+                    <!-- Project 4 - Graphic Design -->
+                    <div class="project-card glass-card reveal reveal-d1" data-category="graphics">
+                        <div class="project-img-wrap">
+                            <img src="images/megadesign.png" alt="Social Media Post Design 1" />
+                        </div>
+                        <div class="project-body">
+                            <span class="project-cat" data-translate="project4graphicPreTitle">Social Media
+                                Design</span>
+                            <h4 class="project-title" data-translate="project4graphicTitle">Restaurant Promo Poster</h4>
+                            <p class="project-desc" data-translate="project4graphicSubTitle">
+                                Bold, appetite-driving visuals built to stop the scroll and drive walk-in traffic.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Project 5 - Graphic Design -->
+                    <div class="project-card glass-card reveal reveal-d2" data-category="graphics">
+                        <div class="project-img-wrap">
+                            <img src="images/hamouddesign.jpg" alt="Social Media Post Design 2" />
+                        </div>
+                        <div class="project-body">
+                            <span class="project-cat" data-translate="project5graphicPreTitle">Social Media
+                                Design</span>
+                            <h4 class="project-title" data-translate="project5graphicTitle">Promo Campaign Graphics</h4>
+                            <p class="project-desc" data-translate="project5graphicSubTitle">
+                                Vibrant, price-forward ad creative for a local beverage brand, built to grab attention and drive sales.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Project 6 - Graphic Design -->
+                    <div class="project-card glass-card reveal reveal-d3" data-category="graphics">
+                        <div class="project-img-wrap">
+                            <img src="images/cardesign.jpg" alt="Social Media Post Design 3" />
+                        </div>
+                        <div class="project-body">
+                            <span class="project-cat" data-translate="project6graphicPreTitle">Social Media
+                                Design</span>
+                            <h4 class="project-title" data-translate="project6graphicTitle">Exclusive Rent Car Ad</h4>
+                            <p class="project-desc" data-translate="project6graphicSubTitle">
+                                A sleek automotive ad layout built to highlight exclusivity and drive bookings.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -554,6 +597,12 @@
             btn.addEventListener('click', () => {
                 document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
+
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.project-card').forEach(card => {
+                    const show = filter === 'all' || card.dataset.category === filter;
+                    card.style.display = show ? '' : 'none';
+                });
             });
         });
     </script>
